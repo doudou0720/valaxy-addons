@@ -2,6 +2,7 @@
   "name": "xslt",
   "version": "0.0.1",
   "description": "Valaxy Addon to add xslt into RSS Feed.",
+  "license": "Apache-2.0",
   "repository": "https://github.com/YunYouJun/valaxy",
   "keywords": [
     "valaxy",
@@ -10,7 +11,6 @@
     "xslt"
   ],
   "main": "index.ts",
-  "license": "Apache-2.0",
   "peerDependencies": {
     "valaxy": ">=0.28.11"
   },

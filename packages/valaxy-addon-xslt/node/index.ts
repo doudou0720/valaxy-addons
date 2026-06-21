@@ -1,9 +1,9 @@
 import type { Options } from '../types'
+import { existsSync } from 'node:fs'
+import { readFile, writeFile } from 'node:fs/promises'
+import { resolve } from 'node:path'
 import { defineValaxyAddon } from 'valaxy'
 import pkg from '../package.json'
-import { resolve } from 'node:path'
-import { readFile, writeFile } from 'node:fs/promises'
-import { existsSync } from 'node:fs'
 
 export const addonXslt = defineValaxyAddon<Options>(options => ({
   name: pkg.name,
