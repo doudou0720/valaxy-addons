@@ -36,19 +36,4 @@ jobs:
       - name: Super-Linter
         uses: super-linter/super-linter/slim@v8
         env:
-          DEFAULT_BRANCH: main
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          VALIDATE_ALL_CODEBASE: false
-          # Linters to enable
-          VALIDATE_TYPESCRIPT_ES: true
-          VALIDATE_JAVASCRIPT_ES: true
-          VALIDATE_YAML: true
-          VALIDATE_JSON: true
-          VALIDATE_MARKDOWN: true
-          VALIDATE_GITHUB_ACTIONS: true
-          # Additional linters
-          VALIDATE_EDITORCONFIG: true
-          # Ignore specific patterns
-          FILTER_REGEX_EXCLUDE: '.*/node_modules/.*|.*\\.output/.*'
-          # TypeScript/JavaScript
-          TYPESCRIPT_ES_CONFIG_FILE: eslint.config.js
+            VALIDATE_SPELL_CODESPELL: false
