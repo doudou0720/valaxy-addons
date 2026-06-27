@@ -145,3 +145,6 @@ vite.config.ts.timestamp-*
 # Valaxy for Reference
 
 ./valaxy
+
+# Turbo
+.turbo

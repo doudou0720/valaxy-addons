@@ -9,11 +9,15 @@
   "license": "AGPL-3.0-only",
   "keywords": [],
   "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "format": "prettier --write .",
-    "format:check": "prettier --check .",
-    "typecheck": "tsc --noEmit",
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "lint:fix": "turbo lint:fix",
+    "format": "turbo format",
+    "format:check": "turbo format:check",
+    "typecheck": "turbo typecheck",
+    "clean": "turbo clean",
+    "turbo": "turbo",
     "changeset": "changeset",
     "version-packages": "changeset version",
     "release": "changeset publish",
@@ -24,6 +28,7 @@
     "@changesets/cli": "^2.31.0",
     "eslint": "^9.0.0",
     "prettier": "^3.4.0",
+    "turbo": "^2.10.0",
     "typescript": "^5.7.0"
   }
 }
